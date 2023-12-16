@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.iconMenu {
+    height: 35px;
+}
+
+header {
+    background-color:aliceblue;
+    height: 100px;
+    display: flex;
+}
+
+.btn-menu {
+    padding: 0px;
+    border: none;
+    background-color: dodgerblue;
+    height: 35px;
+}
+
+
+.sld-cntr-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.sld-header {
+    margin: 0px;
+    font-size: 25px;
+}
+
+.sld-vlr {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.btn-menu-lmt {
+    width: 35px;
+}
+
+.sld-hw {
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: dodgerblue;
+    width: auto;
+    border-radius: 90px;
+}
+
+.opt-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.btn-opt-content {
+    margin: 2px;
+    border-radius: 0px;
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: white;
+    padding: 15px;
+}
+
+.img-opt-size {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}

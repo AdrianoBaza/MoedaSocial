@@ -1,0 +1,20 @@
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: 0px;
+}
+
+.size-sistem-login {
+    margin-top: 45%;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 255);
+}
+
+.btn-login {
+    margin: 10px;
+}
