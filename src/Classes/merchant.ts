@@ -2,8 +2,8 @@ class comerciante {
     nome: String;
     cnpj_cpf: String;
     saldo: number = 100.00
-    entradas_moeda: Array<string> = []
-    saidas_moeda: Array<string> = []
+    entradas_moeda: Array<Object> = []
+    saidas_moeda: Array<Object> = []
 
     constructor(nome:String, cnpj_cpf: String){
         this.nome = nome

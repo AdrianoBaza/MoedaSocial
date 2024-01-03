@@ -1,9 +1,9 @@
 class escola {
     nome: String = '';
     registro_identificacao: String = '';
-    comercios: Array<Array<String>> = [];
-    estudantes: Array<Array<String>> = [];
-    professores: Array<Array<String>> = [];
+    comercios: Array<Object> = [];
+    estudantes: Array<Object> = [];
+    professores: Array<Object> = [];
 
     constructor(nome: String,registro_identificacao: String){
         this.nome = nome;
@@ -11,17 +11,27 @@ class escola {
     }
 
     Adicionar_aluno(nome: String, matricula: String, id: String): void {
-        let novo_aluno: Array<String> = [nome,matricula, id];
+        let novo_aluno: Object = {
+            nome: nome,
+            matricula: matricula,
+            id: id
+        };
         this.estudantes.push(novo_aluno)
     }
 
     Adicionar_prof(nome: String, identificacao: String){
-        let novo_prof: Array<String> = [nome,identificacao];
+        let novo_prof: Object = {
+            nome: nome,
+            identificacao: identificacao
+        };
         this.professores.push(novo_prof)
     }
 
     Adicionar_comercio(nome: String, identificacao: String){
-        let novo_comerc: Array<String> = [nome,identificacao];
+        let novo_comerc: Object = {
+            nome: nome,
+            identificacao: identificacao
+        };
         this.comercios.push(novo_comerc)
     }
 
