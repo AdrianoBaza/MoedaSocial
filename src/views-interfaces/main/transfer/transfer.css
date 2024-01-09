@@ -1,0 +1,28 @@
+
+Body {
+    margin: 0px;
+}
+
+.header_transfer {
+    background-color: rgb(202, 245, 245);
+    margin: 3px;
+    height: 50x;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 15%;
+}
+
+.input_keytransfer {
+    height: 100px;
+    
+}
+
+button {
+    margin: 5px;
+    
+}
+
+label {
+    position:relative;
+}
+
