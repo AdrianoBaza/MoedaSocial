@@ -4,11 +4,11 @@ const app = Express()
 const porta = 3000
 
 app.get('/menu', (req: Request, res: Response)=>{
-    res.sendFile('/workspaces/MoedaSocial/src/views-interfaces/main/main.ts')
+    res.render(__dirname+'/src/views-interfaces/main/main.ts')
 })
 
 app.get('/menu/transferencia', (req:Request, res: Response)=>{
-    res.sendFile('/workspaces/MoedaSocial/src/views-interfaces/main/transfer/transfer.html')
+    res.sendFile(__dirname+'/src/views-interfaces/main/transfer/transfer.html')
 })
 
 
