@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/extrato.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Página de Extrato de Saldo</title>
+</head>
+
+<body>
+
+  <div class="extrato-saldo-container">
+    <h1>Extrato de Saldo</h1>
+
+    <!-- Seletor de mês -->
+    <label for="mesSelector">Selecione o mês: </label>
+    <select id="mesSelector">
+      <option value="2024-01">Janeiro 2024</option>
+      <option value="2024-02">Fevereiro 2024</option>
+      <option value="2024-03">Março 2024</option>
+      <option value="2024-04">Abril 2024</option>
+      <option value="2024-05">Maio 2024</option>
+      <option value="2024-06">Junho 2024</option>
+      <option value="2024-07">Julho 2024</option>
+      <option value="2024-08">Agosto 2024</option>
+      <option value="2024-09">Setembro 2024</option>
+      <option value="2024-10">Outubro 2024</option>
+      <option value="2024-11">Novembro 2024</option>
+      <option value="2024-12">Dezembro 2024</option>
+    </select>
+
+    <!-- Elemento para exibir o saldo atual -->
+    <div class="saldo-container">
+      <p>Seu Saldo Atual: R$ <span id="saldoAtual">0.00</span></p>
+    </div>
+
+    <!-- Tabela para exibir o extrato -->
+    <div class="extrato-saldo-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Gráfico para visualização do extrato -->
+    <div class="extrato-saldo-chart">
+      <canvas id="saldoChart"></canvas>
+    </div>
+  </div>
+
+  <script src="./js/extrato.js"></script>
+</body>
+
+</html>

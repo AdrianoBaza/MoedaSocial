@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/saldo.css">
+  <title>Página de Adquirir Saldo</title>
+</head>
+
+<body>
+
+  <div class="adquirir-saldo-container">
+    <h1>Adquirir Saldo</h1>
+    <div class="adquirir-saldo-form">
+      <label for="valor">Valor a Adquirir:</label>
+      <input type="number" id="valor" placeholder="Informe o valor">
+
+      <button onclick="adquirirSaldo()">Adquirir</button>
+    </div>
+
+    <div class="saldo-container">
+      <p>Seu Saldo Atual: R$ <span id="saldoAtual">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="./js/saldo.js"></script>
+</body>
+
+</html>

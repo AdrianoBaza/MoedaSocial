@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+
+  <div class="cadastro-usuario-container">
+    <center><h1>Cadastro de Usuário</h1></center>
+
+    <!-- Carregar a foto do usuário -->
+    <div class="foto-container">
+      <label for="inputFoto" class="foto-label">
+        <img id="previewFoto" src="./img/Add_Image.png" alt="Foto do Usuário">
+        <span></span>
+      </label>
+      <input type="file" id="inputFoto" accept="image/*" onchange="previewImage()">
+    </div>
+
+    <!-- Nome e sobrenome -->
+    <div class="nome-container">
+      <label for="inputNome">Nome e Sobrenome:</label>
+      <input type="text" id="inputNome" placeholder="Digite seu nome e sobrenome">
+    </div>
+
+    <!-- Dados do Curso -->
+    <div class="dados-curso-container">
+      <label for="inputNomeCurso">Nome do Curso:</label>
+      <input type="text" id="inputNomeCurso" placeholder="Digite o nome do curso">
+
+      <label for="inputNumeroMatricula">Matrícula:</label>
+      <input type="text" id="inputNomeUsuario" placeholder="Digite seu nome de usuário">
+
+      <label for="inputSenha">Senha:</label>
+      <input type="password" id="inputSenha" placeholder="Digite sua senha">
+
+      <label for="inputConfirmeSenha">Confirme a Senha:</label>
+      <input type="password" id="inputConfirmeSenha" placeholder="Confirme sua senha">
+    </div>
+
+    <!-- Dados de Contato -->
+    <div class="dados-contato-container">
+      <label for="inputEndereco">Endereço - Rua-número:</label>
+      <input type="text" id="inputEndereco" placeholder="Digite seu endereço">
+
+      <label for="inputCidade">Cidade:</label>
+      <input type="text" id="inputCidade" placeholder="Digite sua cidade">
+
+      <label for="inputEstado">Estado:</label>
+      <input type="text" id="inputEstado" placeholder="Digite seu estado">
+
+      <label for="inputCEP">CEP:</label>
+      <input type="text" id="inputCEP" placeholder="Digite seu CEP">
+
+      <label for="inputEmail">E-mail:</label>
+      <input type="email" id="inputEmail" placeholder="Digite seu e-mail">
+
+      <label for="inputCelular">Celular:</label>
+      <input type="tel" id="inputCelular" placeholder="Digite seu número de celular">
+    </div>
+
+    <!-- Botão para enviar dados ao back-end -->
+    <button onclick="enviarDados()">Enviar</button>
+    <button onclick="abrirNovaPagina()">Login</button>
+
+    <!-- Div para exibir a mensagem -->
+    <div id="mensagem"></div>
+  </div>
+
+  <script src="./js/cadastro.js"></script>
+
+  <script>
+    // Função para abrir uma nova guia na mesma pagina
+    function abrirNovaPagina() {
+      window.location.href = '../index.html';
+    }
+  </script>
+</body>
+
+</html>

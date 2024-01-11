@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/home.css">
+    <title>Moeda Social</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Moeda Social</h1>
+            <form action="#" method="post" id="loginForm">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="button" onclick="realizarLogin()">Login</button>
+            </form>
+
+            <p>Não tem uma conta? <a href="./src/cadastro.html" id="inscrevaSeLink">Inscreva-se</a></p>
+            
+        </div>
+    </div>
+
+    <script src="./src/js/home.js"></script>
+
+</body>
+</html>

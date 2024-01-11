@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/transferencia.css">
+  <title>Página de Transferência</title>
+</head>
+
+<body>
+
+  <div class="transferencia-container">
+    <h1>Transferir Saldo</h1>
+    <div class="transferencia-form">
+      <label for="destinatario">Destinatário:</label>
+      <input type="text" id="destinatario" placeholder="Nome do destinatário">
+
+      <label for="valor">Valor a Transferir:</label>
+      <input type="number" id="valor" placeholder="Informe o valor">
+
+      <button onclick="realizarTransferencia()">Transferir</button>
+    </div>
+
+    <div class="saldo-container">
+      <p>Seu Saldo Atual: R$ <span id="saldoAtual">1000.00</span></p>
+    </div>
+  </div>
+
+  <script src="./js/transferencia.js"></script>
+</body>
+
+</html>

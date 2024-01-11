@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/user.css">
+  <title>Seu Banco</title>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./pagamento.html">Pagamento</a></li>
+      <li><a href="./transferencia.html">Transferência</a></li>
+      <li><a href="./extrato.html">Extrato</a></li>
+      <li><a href="./saldo.html">Adquirir Moeda</a></li>
+    </ul>
+  </div>
+
+  <div class="saldo-container">
+    <span id="saldo" class="saldo">Saldo: R$ 0,00</span>
+  </div>
+
+  <!-- Adicionando imagens -->
+  <div class="image-container">
+    <a href="./transferencia.html">
+      <img src="./img/tranferir.png" alt="transferencia">
+      <p>Transferência</p>
+    </a>
+    <a href="./pagamento.html">
+      <img src="./img/pagar.png" alt="Pagamento">
+      <p>Pagar</p>
+    </a>
+    <a href="./extrato.html">
+      <img src="./img/extrato.png" alt="extrato">
+      <p>Extrato</p>
+    </a>
+    <a href="./saldo.html">
+      <img src="./img/receber moedas.png" alt="Adquirir Moedas">
+      <p>Adquirir Moedas</p>
+    </a>
+  </div>
+  
+
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>
